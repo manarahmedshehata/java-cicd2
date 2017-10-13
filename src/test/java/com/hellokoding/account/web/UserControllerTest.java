@@ -8,7 +8,7 @@ public class UserControllerTest {
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		assertEquals(4, 4);
+		assertEquals(1, 1);
 	}
 
 }
