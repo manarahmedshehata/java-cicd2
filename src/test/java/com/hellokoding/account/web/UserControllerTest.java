@@ -1,16 +1,11 @@
 package com.hellokoding.account.web;
 
-import org.junit.*;
-import static net.sourceforge.jwebunit.junit.JWebUnit.*;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
-import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
-import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
-import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
-import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
 
-import net.sourceforge.jwebunit.util.TestingEngineRegistry;
-
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 public class UserControllerTest{
 //	 @Before
 //	    public void prepare() {
@@ -18,14 +13,16 @@ public class UserControllerTest{
 //	        //setBaseUrl("http://localhost:8080");
 //	    }
 //
-//	    @Test
+//      @Test
 //	    public void testLoginPage() {
+	    	//fail("not");
+//	    	assertEquals("t", "Q", "Q");
 //	        beginAt("login"); 
 //	        assertTitleEquals("Log in");
 //	        assertLinkPresent("registration");//Create an account id
 //	        clickLink("registration");
 //	        assertTitleEquals("Create an account");
-	    }
+//	    }
 	    
 //	    @Test
 //	    public void testHomePage() {
@@ -36,5 +33,27 @@ public class UserControllerTest{
 //	        assertTitleEquals("Login");
 //	    }
 
+	    private static WebDriver driver;
+
+	   @BeforeClass
+	    public static void setUp(){
+	    	System.out.println("start test");
+	        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HassanM\\Desktop\\manar\\devops\\code\\registration-login-spring-xml-maven-jsp-mysql-master\\Java-CICD\\drivers\\chromedriver.exe");
+	        driver = new ChromeDriver();   
+	    }
+//
+	    @Test
+	    public void testChromeSelenium() {
+	        driver.get("http://localhost:8080");
+	    
+	    }
+
+//	    @AfterClass
+//	    public static void cleanUp(){
+//	        if (driver != null) {
+//	            driver.close();
+//	            driver.quit();
+//	        }
+//	    }
 	
 }

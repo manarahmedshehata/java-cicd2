@@ -105,6 +105,25 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
+        <!-- selenium test -->
+        <dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-server</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-chrome-driver</artifactId>
+	    <version>3.6.0</version>
+	</dependency>
+		
     </dependencies>
     <build>
         <plugins>
