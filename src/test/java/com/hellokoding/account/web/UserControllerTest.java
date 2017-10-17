@@ -38,7 +38,7 @@ public class UserControllerTest{
 	   @BeforeClass
 	    public static void setUp(){
 	    	System.out.println("start test");
-	        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HassanM\\Desktop\\manar\\devops\\code\\registration-login-spring-xml-maven-jsp-mysql-master\\Java-CICD\\drivers\\chromedriver.exe");
+	        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 	        driver = new ChromeDriver();   
 	    }
 //
