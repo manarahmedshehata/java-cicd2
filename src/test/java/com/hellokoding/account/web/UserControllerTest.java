@@ -1,37 +1,12 @@
 package com.hellokoding.account.web;
 
 
-import org.junit.BeforeClass;
+import org.junit.*;
 import org.junit.Test;
+import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 public class UserControllerTest{
-//	 @Before
-//	    public void prepare() {
-//	        setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-//	        //setBaseUrl("http://localhost:8080");
-//	    }
-//
-//      @Test
-//	    public void testLoginPage() {
-	    	//fail("not");
-//	    	assertEquals("t", "Q", "Q");
-//	        beginAt("login"); 
-//	        assertTitleEquals("Log in");
-//	        assertLinkPresent("registration");//Create an account id
-//	        clickLink("registration");
-//	        assertTitleEquals("Create an account");
-//	    }
-	    
-//	    @Test
-//	    public void testHomePage() {
-//	        beginAt("home.jsp"); 
-//	        assertTitleEquals("Home");
-//	        assertLinkPresent("login");
-//	        clickLink("login");
-//	        assertTitleEquals("Login");
-//	    }
 
 	    private static WebDriver driver;
 
@@ -44,15 +19,18 @@ public class UserControllerTest{
 	    @Test
 	    public void testChromeSelenium() {
 	        driver.get("http://localhost:8080");
-	    
+	        driver.findElement(By.name("username")).sendKeys("test1234");
+	        driver.findElement(By.name("password")).sendKeys("test1234");
+	        driver.findElement(By.id("login")).click();
+	        driver.findElement(By.id("logout")).click();
 	    }
 
-//	    @AfterClass
-//	    public static void cleanUp(){
-//	        if (driver != null) {
-//	            driver.close();
-//	            driver.quit();
-//	        }
-//	    }
+	    @AfterClass
+	    public static void cleanUp(){
+	        if (driver != null) {
+	            driver.close();
+	            driver.quit();
+	        }
+	    }
 	
 }

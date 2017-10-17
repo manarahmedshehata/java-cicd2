@@ -41,7 +41,7 @@
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">Log In</button>
             <h4 class="text-center"><a id="registration" href="${contextPath}/registration">Create an account</a></h4>
         </div>
 
