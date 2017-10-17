@@ -41,7 +41,6 @@ public class UserControllerTest{
 	        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 	        driver = new ChromeDriver();   
 	    }
-//
 	    @Test
 	    public void testChromeSelenium() {
 	        driver.get("http://localhost:8080");
