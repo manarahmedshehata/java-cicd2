@@ -1,7 +1,7 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +12,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Welcome</title>
+        <style>
+        body {
+            background-image: url("welcome3.PNG");
+            background-repeat:no-repeat;
+            background-size:cover; 
+        }
+       
+    </style>
+    <title>Welcome TO Vodafone Spain</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
@@ -31,7 +38,7 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </form>
 
-        <h2>Welcome ${pageContext.request.userPrincipal.name} | <a id="logout" onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
+        <h2>Welcome ${pageContext.request.userPrincipal.name} TO Vodafone Spain| <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
 
     </c:if>
 

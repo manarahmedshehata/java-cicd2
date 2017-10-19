@@ -123,6 +123,12 @@
 	    <artifactId>selenium-chrome-driver</artifactId>
 	    <version>3.6.0</version>
 	</dependency>
+	<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-runner</artifactId>
+    <version>9.4.7.v20170914</version>
+    <scope>test</scope>
+    </dependency>
 		
     </dependencies>
     <build>
