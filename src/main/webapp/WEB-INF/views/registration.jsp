@@ -15,14 +15,6 @@
     <meta name="author" content="">
 
     <title>Create an account</title>
-            <style>
-        body {
-            background-image: url("register.PNG");
-             background-repeat:no-repeat;
-            background-size:cover; 
-        }
-       
-    </style>
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
 
@@ -33,7 +25,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="reg_img">
 
 <div class="container">
 

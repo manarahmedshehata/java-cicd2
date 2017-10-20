@@ -50,5 +50,11 @@ body {
 	background-image: url('../images/login.PNG') ;
 } 
 .welcome_img{
-	background-image: url('../images/welcome2.png') ;
+	background-image: url('../images/welcome.PNG') ;
 }  
+.welcome2_img{
+	background-image: url('../images/welcome2.png') ;
+} 
+.reg_img{
+	background-image: url('../images/register.PNG') ;
+}
