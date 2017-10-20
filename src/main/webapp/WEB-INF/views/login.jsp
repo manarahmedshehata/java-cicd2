@@ -5,13 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <style>
-        body {
-            background-image: url("login.PNG");
-            background-repeat:no-repeat;
-            background-size:cover;        
-        }
-    </style>
+   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +25,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="login_img">
 
     <div class="container" align="center">
         <br/>
@@ -74,7 +68,7 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <tr>
                 <td>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+            <button id="login" class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
                 </td>
             </tr>
             <tr>

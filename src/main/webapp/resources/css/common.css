@@ -46,3 +46,9 @@ body {
 .has-error {
     color: red
 }
+.login_img{
+	background-image: url('../images/login.PNG') ;
+} 
+.welcome_img{
+	background-image: url('../images/welcome2.png') ;
+}  
