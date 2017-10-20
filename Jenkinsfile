@@ -7,10 +7,10 @@ pipeline {
         steps {
           //notifyStarted("Java Build")
           echo "java build"
-          sh"""
+          // sh"""
             
-            mvn clean package -Dmaven.test.skip=true
-          """
+          //   mvn clean package -Dmaven.test.skip=true
+          // """
         }
     // post
     // {
