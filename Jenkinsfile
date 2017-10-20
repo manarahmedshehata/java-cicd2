@@ -28,6 +28,9 @@ pipeline {
     steps {
      // notifyStarted("Docker Build")
       echo "docker build" 
+      sh"""
+        cp /tmp/jetty-runner-9.4.7.v20170914.jar .
+      """
     //   withCredentials([usernamePassword(credentialsId: '18b57317-0966-4f4a-9fa8-49f733bc09bd', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
     //     sh """
     //     cd demo/src/main/docker/
