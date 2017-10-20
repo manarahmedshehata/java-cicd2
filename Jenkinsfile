@@ -9,7 +9,7 @@ pipeline {
           echo "java build"
           sh"""
             
-            mvn clean package
+            mvn clean package -Dmaven.test.skip=true
           """
         }
     // post
