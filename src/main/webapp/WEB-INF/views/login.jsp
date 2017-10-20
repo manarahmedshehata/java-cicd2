@@ -72,7 +72,7 @@
                 </td>
             </tr>
             <tr>
-            <h4 class="text-center"><a href="${contextPath}/registration" style="color:white">Create an account</a></h4>
+            <h4 class="text-center"><a href="${contextPath}/registration" style="color:black">Create an account</a></h4>
             </tr>
             </table>
         </div>
