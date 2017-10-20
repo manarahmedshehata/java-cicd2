@@ -63,7 +63,7 @@ pipeline {
           sh """
             
             kubectl delete -f deploy/manifests
-            kubectl apply -f deploy/manifests
+            kubectl create -f deploy/manifests
             
            """  
         //     }
