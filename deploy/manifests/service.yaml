@@ -8,6 +8,6 @@ spec:
   selector:
     app: cicd-demo2
   ports:
-  - name: cicd-demo-port
+  - name: cicd-demo2-port
     port: 7071
     targetPort: 9090
