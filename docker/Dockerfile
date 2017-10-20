@@ -7,4 +7,4 @@ USER demo
 VOLUME /tmp
 ADD account-1.0-SNAPSHOT.war demo-app.war
 ADD jetty-runner-9.4.7.v20170914.jar jetty-runner.jar
-ENTRYPOINT ["java","-jar","jetty-runner.jar","demo-app.war","--debug"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xmx512M","-jar","jetty-runner.jar","demo-app.war"]
