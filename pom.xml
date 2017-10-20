@@ -128,7 +128,14 @@
     <artifactId>jetty-runner</artifactId>
     <version>9.4.7.v20170914</version>
     <scope>test</scope>
+    
     </dependency>
+    <dependency>  
+    <groupId>javax</groupId>    
+    <artifactId>javaee-web-api</artifactId>    
+    <version>7.0</version> <!-- Put here the version of your Java EE app, in my case 7.0 -->
+    <scope>provided</scope>
+</dependency> 
 		
     </dependencies>
     <build>
