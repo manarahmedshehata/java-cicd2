@@ -14,4 +14,4 @@ spec:
       - backend:
           serviceName: cicd-demo2-svc
           servicePort: 7071
-        path: /demo2/*
+        path: /demo-test/*
