@@ -12,14 +12,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-        <style>
-        body {
-            background-image: url("welcome3.PNG");
-            background-repeat:no-repeat;
-            background-size:cover; 
-        }
        
-    </style>
     <title>Welcome TO Vodafone Spain</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +23,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="welcome_img">
 <div class="container">
 
     <c:if test="${pageContext.request.userPrincipal.name != null}">
