@@ -28,18 +28,18 @@ pipeline {
     steps {
      // notifyStarted("Docker Build")
       echo "docker build" 
-       withCredentials([usernamePassword(credentialsId: '18b57317-0966-4f4a-9fa8-49f733bc09bd', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-        sh """
-          cd docker/
-          cp ${WORKSPACE}/target/account-1.0-SNAPSHOT.war .
-          cp /tmp/jetty-runner-9.4.7.v20170914.jar .
-          docker build -t deploymentcoe/cicd-demo2 .
-          docker login --username $USERNAME --password $PASSWORD
-          docker push deploymentcoe/cicd-demo2
-          docker images
-          docker rmi deploymentcoe/cicd-demo2
-        """
-     }
+     //   withCredentials([usernamePassword(credentialsId: '18b57317-0966-4f4a-9fa8-49f733bc09bd', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+     //    sh """
+     //      cd deploy/docker/
+     //      cp ${WORKSPACE}/target/account-1.0-SNAPSHOT.war .
+     //      cp /tmp/jetty-runner-9.4.7.v20170914.jar .
+     //      docker build -t deploymentcoe/cicd-demo2 .
+     //      docker login --username $USERNAME --password $PASSWORD
+     //      docker push deploymentcoe/cicd-demo2
+     //      docker images
+     //      docker rmi deploymentcoe/cicd-demo2
+     //    """
+     // }
           
     // }
     // post
@@ -60,12 +60,12 @@ pipeline {
           
           echo "Deployment" 
         //  notifyStarted("Kubernetes Deployment")
-        //   sh """
-        //     kubectl delete -f ./manifests/deployment.yaml
-        //     #kubectl delete -f ./manifests/ingress.yaml
-        //     kubectl apply -f ./manifests
+          sh """
+            #kubectl delete -f ./manifests/deployment.yaml
+            #kubectl delete -f ./manifests/ingress.yaml
+            kubectl apply -f ./manifests
             
-        //    """  
+           """  
         //     }
 
         //     post
