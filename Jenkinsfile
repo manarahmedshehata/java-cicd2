@@ -61,9 +61,9 @@ pipeline {
           echo "Deployment" 
         //  notifyStarted("Kubernetes Deployment")
           sh """
-            #kubectl delete -f ./manifests/deployment.yaml
-            #kubectl delete -f ./manifests/ingress.yaml
-            kubectl apply -f ./manifests
+            #kubectl delete -f deploy/manifests/deployment.yaml
+            #kubectl delete -f deploy/manifests/ingress.yaml
+            kubectl apply -f deploy/manifests
             
            """  
         //     }
