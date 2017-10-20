@@ -10,4 +10,4 @@ spec:
   ports:
   - name: cicd-demo-port
     port: 7071
-    targetPort: 8080
+    targetPort: 9090
