@@ -34,10 +34,10 @@ pipeline {
           cp ${WORKSPACE}/target/account-1.0-SNAPSHOT.war .
           cp /tmp/jetty-runner-9.4.7.v20170914.jar .
           docker build -t deploymentcoe/cicd-demo2 .
-          #docker login --username $USERNAME --password $PASSWORD
-          #docker push deploymentcoe/cicd-demo2
+          docker login --username $USERNAME --password $PASSWORD
+          docker push deploymentcoe/cicd-demo2
           docker images
-          #docker rmi deploymentcoe/cicd-demo2
+          docker rmi deploymentcoe/cicd-demo2
         """
      }
           
