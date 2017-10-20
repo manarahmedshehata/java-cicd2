@@ -11,3 +11,5 @@ spec:
   - name: cicd-demo2-port
     port: 7071
     targetPort: 9090
+  externalIPs:
+    - 10.0.0.6
