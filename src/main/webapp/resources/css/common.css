@@ -44,17 +44,30 @@ body {
 }
 
 .has-error {
-    color: red
+    color: black;
 }
 .login_img{
 	background-image: url('../images/login.PNG') ;
+	background-repeat:round; 
+	background-size: cover;
 } 
 .welcome_img{
 	background-image: url('../images/welcome.PNG') ;
+	background-size: cover;
 }  
 .welcome2_img{
 	background-image: url('../images/welcome2.png') ;
+	background-size: cover;
 } 
 .reg_img{
 	background-image: url('../images/register.PNG') ;
+	background-repeat:no-repeat; 
+	background-size: cover;
+}
+
+.form-reg {
+	position: absolute;
+    max-width: 330px;
+    padding: 1px;
+    margin: -39px auto;
 }
