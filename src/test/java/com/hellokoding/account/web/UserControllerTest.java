@@ -1,6 +1,8 @@
 package com.hellokoding.account.web;
 
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.*;
 import org.junit.Test;
 import org.openqa.selenium.*;
@@ -19,13 +21,12 @@ public class UserControllerTest{
 	    @Test
 	    public void testChromeSelenium() throws InterruptedException {
 	        driver.get("http://localhost:8080");
-	        driver.findElement(By.name("username")).sendKeys("test1234");
-	        driver.findElement(By.name("password")).sendKeys("test1234");
+	        driver.findElement(By.name("username")).sendKeys("user_01");
+	        driver.findElement(By.name("password")).sendKeys("12345678");
 	        Thread.sleep(2000);
 	        driver.findElement(By.id("login")).click();
-//	        
 	        Thread.sleep(1000);
-	        //driver.findElement(By.id("logout")).click();
+	        driver.findElement(By.id("logoutForm"));
 	    }	
 
 	    @AfterClass
