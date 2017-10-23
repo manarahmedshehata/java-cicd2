@@ -137,7 +137,33 @@
     <scope>provided</scope>
 </dependency> 
 		
+		
+	<!-- add sonar   --> 
+<dependency>
+         <groupId>org.sonarsource.scanner.maven</groupId>
+         <artifactId>sonar-maven-plugin</artifactId>
+         <version>3.2</version>
+</dependency>
+		
     </dependencies>
+    
+    
+    <!-- add profiles  --> 
+ <profiles>
+         <profile>
+                  <id>sonar</id>
+                  <activation>
+                  <activeByDefault>true</activeByDefault>
+                  </activation>
+                  <properties>
+                  <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                  <sonar.host.url>
+                  http://localhost:9000
+                  </sonar.host.url>
+                  </properties>
+         </profile>
+</profiles>
+    
     <build>
         <plugins>
             <plugin>
@@ -151,6 +177,13 @@
                     </webApp>
                 </configuration>
             </plugin>
+<!-- add plugins  -->            
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.0.2</version>
+</plugin>
+            
         </plugins>
     </build>
 </project>

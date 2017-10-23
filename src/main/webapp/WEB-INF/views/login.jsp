@@ -41,6 +41,7 @@
         
 
         <div class="form-group ${error != null ? 'has-error' : ''}" >
+        <span>${message}</span>
             <table>
                 <tr>
                     <td>
@@ -49,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-            <span>${message}</span>
+            
             UserName  </td>
                     <td>
             <input name="username" type="text" class="form-control" style="" placeholder="Username"
@@ -72,7 +73,7 @@
                 </td>
             </tr>
             <tr>
-            <h4 class="text-center"><a href="${contextPath}/registration" style="color:black">Create an account</a></h4>
+            <h4 class="text-center"><a href="${contextPath}/registration" style="color:red">Create an account</a></h4>
             </tr>
             </table>
         </div>
