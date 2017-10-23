@@ -27,16 +27,16 @@ pipeline {
       steps {
         notifyStarted("Docker Build")
         echo "docker build" 
-        withCredentials([usernamePassword(credentialsId: '18b57317-0966-4f4a-9fa8-49f733bc09bd', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials([usernamePassword(credentialsId: '98a29d6f-4f30-485a-a758-475b5fe03274', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh """
             cd deploy/docker/
             cp ${WORKSPACE}/target/account-1.0-SNAPSHOT.war .
             cp /tmp/jetty-runner-9.4.7.v20170914.jar .
-            docker build -t deploymentcoe/cicd-demo2 .
-            docker login --username $USERNAME --password $PASSWORD
-            docker push deploymentcoe/cicd-demo2
+            docker build -t deploymentcoe.vodafone.skytapdns.com/cicd-demo2 .
+            docker login --username $USERNAME --password $PASSWORD https://deploymentcoe.vodafone.skytapdns.com
+            docker push deploymentcoe.vodafone.skytapdns.com/cicd-demo2
             docker images
-            docker rmi deploymentcoe/cicd-demo2
+            docker rmi deploymentcoe.vodafone.skytapdns.com/cicd-demo2
           """
         }
             
