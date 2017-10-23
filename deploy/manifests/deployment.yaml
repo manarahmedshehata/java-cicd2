@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo2
-        image: deploymentcoe/cicd-demo2
+        image: deploymentcoe.vodafone.skytapdns.com/cicd-demo2
         imagePullPolicy: Always
         ports:
          - containerPort: 9090
