@@ -19,10 +19,10 @@ public class UserControllerTest{
 	    @Test
 	    public void testChromeSelenium() throws InterruptedException {
 	        driver.get("http://localhost:8080");
-//	        driver.findElement(By.name("username")).sendKeys("test1234");
-//	        driver.findElement(By.name("password")).sendKeys("test1234");
-//	        Thread.sleep(2000);
-//	        driver.findElement(By.id("login")).click();
+	        driver.findElement(By.name("username")).sendKeys("test1234");
+	        driver.findElement(By.name("password")).sendKeys("test1234");
+	        Thread.sleep(2000);
+	        driver.findElement(By.id("login")).click();
 //	        
 	        Thread.sleep(1000);
 	        //driver.findElement(By.id("logout")).click();
