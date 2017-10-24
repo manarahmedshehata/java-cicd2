@@ -49,6 +49,7 @@ public class UserController {
     public String login(Model model, String error, String logout) { 
     	
     	return"welcome2";
+    	
 //        if (error != null)
 //            model.addAttribute("error", "Your username and password is invalid.");
 //
