@@ -7,8 +7,8 @@ pipeline {
           notifyStarted("Java Build")
           echo "java build"
           sh"""
-            #mvn clean package -e org.sonarsource.scanner.maven:sonar-maven-plugin:RELEASE:sonar -Dmaven.test.skip=true
-            mvn clean package -Dmaven.test.skip=true
+            mvn clean package -e org.sonarsource.scanner.maven:sonar-maven-plugin:RELEASE:sonar -Dmaven.test.skip=true
+            #mvn clean package -Dmaven.test.skip=true
           """
         }
         post
