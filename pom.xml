@@ -158,7 +158,7 @@
                   <properties>
                   <!-- Optional URL to server. Default value is http://localhost:9000 -->
                   <sonar.host.url>
-                  http://deploymentcoe.vodafone.skytapdns.com:9001
+                  http://localhost:9000
                   </sonar.host.url>
                   </properties>
          </profile>
