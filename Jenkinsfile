@@ -7,6 +7,7 @@ pipeline {
           notifyStarted("Java Build")
           echo "java build"
           sh"""
+            cd /any
             mvn clean package -e org.sonarsource.scanner.maven:sonar-maven-plugin:RELEASE:sonar  -Dsonar.host.url=http://deploymentcoe.vodafone.skytapdns.com:9001 -Dmaven.test.skip=true
             mvn clean deploy -Dmaven.test.skip=true
           """
