@@ -1,3 +1,4 @@
+
 package com.hellokoding.account.web;
 
 import com.hellokoding.account.model.User;
@@ -59,3 +60,4 @@ public class UserController {
     }
 
 }
+
