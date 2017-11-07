@@ -1,7 +1,6 @@
 pipeline {
     agent any
-    stages {
-      
+    stages { 
       stage('Java Build') {
         steps {
           notifyStarted("Java Build")
