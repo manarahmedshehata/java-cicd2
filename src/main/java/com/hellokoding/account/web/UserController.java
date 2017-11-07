@@ -1,3 +1,4 @@
+
 package com.hellokoding.account.web;
 
 import com.hellokoding.account.model.User;
@@ -47,9 +48,10 @@ public class UserController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) { 
-        // just welcome page
-        return"welcome2";
-        
+
+	// just welcome page
+   	return"welcome2";
+
     }
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
