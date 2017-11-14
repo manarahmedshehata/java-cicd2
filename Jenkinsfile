@@ -58,7 +58,7 @@ pipeline {
           notifyStarted("Kubernetes Deployment")
           sh """
             
-            #kubectl delete -f deploy/manifests
+            kubectl delete -f deploy/manifests
             kubectl create -f deploy/manifests
             
            """  
