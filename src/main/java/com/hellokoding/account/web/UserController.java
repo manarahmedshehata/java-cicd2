@@ -49,7 +49,7 @@ public class UserController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) { 
     	// just welcome page
-        return"welcome2";
+        return "welcome2";
 
     }
 
