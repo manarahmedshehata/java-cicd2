@@ -26,13 +26,13 @@
     <repository>
       <id>nexus</id>
       <name>Nexus Releases</name>
-      <url>http://deploymentcoe.vodafone.skytapdns.com:7071/repository/maven-releases/</url>
+      <url>http://deploymentcoe.vodafone.skytapdns.com:8080/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Nexus Snapshot</name>
 	<!--url>http://deploymentcoe.vodafone.skytapdns.com:7071/repository/testmvn/</url-->
-      <url>http://deploymentcoe.vodafone.skytapdns.com:7071/repository/maven-snapshots/</url>
+      <url>http://deploymentcoe.vodafone.skytapdns.com:8080/repository/maven-snapshots/</url>
     </snapshotRepository>
 
   </distributionManagement> 
@@ -240,7 +240,7 @@
 		</executions>
 		<configuration>
 		<!-- The Base URL of Nexus instance where we want to stage -->
-			<nexusUrl>http://deploymentcoe.vodafone.skytapdns.com:7071/</nexusUrl>
+			<nexusUrl>http://deploymentcoe.vodafone.skytapdns.com:8080/</nexusUrl>
 			<!-- The server "id" element from settings to use authentication from -->
 			<serverId>nexus</serverId>
 		</configuration>
