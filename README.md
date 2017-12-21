@@ -11,6 +11,7 @@
 - Maven
 - JSP
 - MySQL
+- Junit
 
 ## Run
 ```mvn jetty:run```
