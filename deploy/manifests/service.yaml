@@ -9,7 +9,7 @@ spec:
     app: cicd-demo2
   ports:
   - name: cicd-demo2-port
-    port: 7073
+    port: 6070
     targetPort: 9090
   externalIPs:
     - 10.0.0.5
