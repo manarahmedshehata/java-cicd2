@@ -50,7 +50,6 @@ public class UserController {
     public String login(Model model, String error, String logout) { 
     	// just welcome page
         return"welcome2";
-        
 
     }
 
